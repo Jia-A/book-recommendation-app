@@ -44,8 +44,10 @@ export default function App() {
             onClick={() => genreClick(genre)}
             style={{
               cursor: "pointer",
-              background: "white",
+              borderRadius: "0.5rem",
+              background: "#efefef",
               padding: "1rem",
+              border: "1px solid black",
               margin: "1rem 0.5rem"
             }}
           >
@@ -63,8 +65,9 @@ export default function App() {
               style={{
                 listStyle: "none",
                 padding: "1rem",
-                border: "1Px solid black",
+                border: "1px solid #9CA3AF",
                 width: "80%",
+                borderRadius: "0.5rem",
                 margin: "1rem 0.5rem"
               }}
             >
