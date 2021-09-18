@@ -2,29 +2,46 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var books = {
-  happy: [
+  mystery: [
     {
-      name: "Harry Potter Series",
-      rating: "5/5"
+      name: "Verity",
+      rating: "4/5"
     },
     {
-      name: "Heart bones",
+      name: "The girl on the train",
       rating: "4/5"
+    },
+    {
+      name: "Into the water",
+      rating : "3.5/5"
     }
   ],
-  sad: [
-    { name: "TFIOS", rating: "5/5" },
-    { name: "Hopeless", rating: "4/5" }
-  ],
   calm: [
+    { name: "The perks of being a wallflower", rating: "4.5/5" },
+    { name: "Five people you meet in heaver", rating: "3/5" },
+    { name: "The goldfinch", rating: "4.5/5"}
+  ],
+  must_read_once: [
     { name: "Kafka on the shore", rating: "3/5" },
-    { name: "Layla", rating: "4/5" }
-  ]
+    { name: "Everything Everything", rating: "4/5" },
+    { name: "They both die at the end", rating:"3.5/5"}
+  ],
+  heart_wrenching: [
+    { name: "The boy in the striped pyjamas", rating: "5/5" },
+    { name: "A thousad splendid suns", rating: "4.5/5" },
+    { name: "And the mountains echoed", rating:"5/5"}
+  ],
+  teen_novels: [
+    { name: "Confess", rating: "4/5" },
+    { name: "Hopeless", rating: "4.5/5" },
+    { name: "Paper towns", rating:"4.5/5"}
+  ],
+  
 };
 var book = Object.keys(books);
 
 export default function App() {
-  const [genreAsked, setGenreAsked] = useState("sad");
+  const [genreAsked, setGenreAsked] = useState("heart_wrenching");
 
   function genreClick(genre) {
     // var meaning = books[genre];
